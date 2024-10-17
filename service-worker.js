@@ -9,8 +9,6 @@ function togglePlay() {
   }
 }
 
-
-
 function forward() {
   const pip = document.pictureInPictureElement;
   if(pip) {
