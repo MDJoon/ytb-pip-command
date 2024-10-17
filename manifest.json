@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Youtube PIP commands",
+    "version": "1.0",
+    "description": "유튜브 PIP상태에서 커맨드 사용",
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "permissions": ["tabs", "scripting"],
+    "host_permissions": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "commands": {
+      "toggle_play": {
+        "suggested_key": {
+          "default": "Alt+Space",
+          "windows": "Alt+Space"
+        },
+        "description": "Toggle start and pause"
+      },
+      "init": {
+        "suggested_key": {
+          "default": "Alt+0",
+          "windows": "Alt+0"
+        },
+        "description": "Init"
+      },
+      "forward": {
+        "description": "Forward"
+      },
+      "backward": {
+        "description": "Backward"
+      }
+    }
+  }
